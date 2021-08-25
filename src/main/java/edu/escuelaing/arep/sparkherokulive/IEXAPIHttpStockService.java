@@ -3,7 +3,7 @@ package edu.escuelaing.arep.sparkherokulive;
 
 /**
  *
- * @author Juan sebastian Garcia 
+ * @author Juan sebastian Garcia
  */
 public class IEXAPIHttpStockService extends HttpStockService {
     String stock= "fb";

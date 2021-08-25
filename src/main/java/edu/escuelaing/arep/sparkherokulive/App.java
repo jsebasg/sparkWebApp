@@ -65,16 +65,19 @@ public class App
     private static String facadeAlpha(Request req, Response res) {
         res.type("application/json");
         String stock = req.queryParams("st");
+        System.out.println("Stock str:" + stock);
         String response = "None";
-        HttpStockService stockService =CurrentServiceInstance.getInstance().getService();
+        HttpStockService stockService = CurrentServiceInstance.getInstance().getService();
         if (stock != null && stock != ""){
+            System.out.println("Stting stock to :" + stock);
             stockService.setStock(stock);
         }
         try {
-            response = stockService.TimeSeriesDaily();
-        }catch(IOException ex){
+            response= stockService.TimeSeriesDaily();
+        } catch (IOException ex) {
             Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
         }
         return response;
     }
 }
+
