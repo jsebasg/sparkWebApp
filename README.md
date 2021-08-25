@@ -10,6 +10,7 @@ esta es la implementacion de una aplicacion que permite consultar el mercado de 
 ### Ejecucion 
 ![img/ejemplo1.png](img/ejemplo1.png)
 ![img/ejemplo2.png](img/ejemplo2.png)
+
 ### herramientas usadas: 
 -maven 
 -spark 
